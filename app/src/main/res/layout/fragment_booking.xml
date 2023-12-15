@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context=".presentation.booking.BookingFragment">
+
+    <TextView
+        android:id="@+id/textViewHotelName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="cursive"
+        android:textSize="28sp"
+        android:textColor="@color/black"
+        tools:text="Hotel Belarus" />
+
+    <!-- Edit Text: First Name -->
+    <EditText
+        android:id="@+id/editTextFirstName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/first_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <!-- Edit Text: Last Name -->
+    <EditText
+        android:id="@+id/editTextLastName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/last_name"
+        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName" />
+
+    <!-- Edit Text: Adults Number -->
+    <EditText
+        android:id="@+id/editTextAdultsNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/adults_num"
+        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!-- Edit Text: Children Number -->
+    <EditText
+        android:id="@+id/editTextChildrenNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/children_num"
+        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="number" />
+
+    <!-- Edit Text: Phone Number -->
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:textColor="@color/black"
+        android:importantForAutofill="no"
+        android:inputType="phone" />
+
+    <!-- Edit Text: Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/from" />
+
+        <ImageButton
+            android:id="@+id/imageButtonDateFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/date_picker_icon"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/textViewCheckInDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2023-10-11" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/to" />
+
+
+        <ImageButton
+            android:id="@+id/imageButtonDateTo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:background="@drawable/date_picker_icon"
+            android:importantForAccessibility="no" />
+
+        <TextView
+            android:id="@+id/textViewCheckOutDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="2023-10-11" />
+
+
+    </LinearLayout>
+
+
+    <!-- Radio Group: Payment Type -->
+    <RadioGroup
+        android:id="@+id/radioGroupPaymentType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonCash"
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:text="@string/cash" />
+
+        <RadioButton
+            android:id="@+id/radioButtonCreditCard"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credit_card" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/layoutCardDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Edit Text: Card Number -->
+        <EditText
+            android:id="@+id/editTextCardNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/card_number"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <!-- Edit Text: Expiry Date -->
+        <EditText
+            android:id="@+id/editTextExpiryDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/expiry_date"
+            android:importantForAutofill="no"
+            android:inputType="date" />
+
+        <!-- Edit Text: CVV -->
+        <EditText
+            android:id="@+id/editTextCVV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/cvv"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonFinish"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/finish"/>
+
+</LinearLayout>

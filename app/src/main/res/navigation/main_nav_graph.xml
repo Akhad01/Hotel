@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/navHome">
+
+    <fragment
+        android:id="@+id/navHome"
+        android:name="com.example.hotelbookingapp.presentation.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/nav_home_hotels"
+            app:destination="@id/hotelsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navHistory"
+        android:name="com.example.hotelbookingapp.presentation.history.HistoryFragment"
+        android:label="fragment_history"
+        tools:layout="@layout/fragment_history" />
+    <fragment
+        android:id="@+id/navFavorite"
+        android:name="com.example.hotelbookingapp.presentation.favorite.FavoriteFragment"
+        android:label="fragment_favorite"
+        tools:layout="@layout/fragment_favorite" >
+        <action
+            android:id="@+id/nav_fav_to_details"
+            app:destination="@id/hotelDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/navProfile"
+        android:name="com.example.hotelbookingapp.presentation.profile.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/hotelsFragment"
+        android:name="com.example.hotelbookingapp.presentation.hotels.HotelsFragment"
+        android:label="fragment_hotels"
+        tools:layout="@layout/fragment_hotels" >
+        <action
+            android:id="@+id/nav_hotel_to_details"
+            app:destination="@id/hotelDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookingFragment"
+        android:name="com.example.hotelbookingapp.presentation.booking.BookingFragment"
+        android:label="fragment_booking"
+        tools:layout="@layout/fragment_booking" />
+    <fragment
+        android:id="@+id/hotelDetailsFragment"
+        android:name="com.example.hotelbookingapp.presentation.hotel_details.HotelDetailsFragment"
+        android:label="fragment_hotel_details"
+        tools:layout="@layout/fragment_hotel_details" >
+        <action
+            android:id="@+id/nav_details_to_book"
+            app:destination="@id/bookingFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">HotelsApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="signup_underline"><u>Signup</u></string>
+    <string name="login_underline"><u>Login</u></string>
+    <string name="signup">Signup</string>
+    <string name="re_password">Re- Password</string>
+    <string name="home">Home</string>
+    <string name="history">History</string>
+    <string name="favorite">Favorite</string>
+    <string name="profile">Profile</string>
+    <string name="find_your_hotel">Find your Hotel</string>
+    <string name="location">Location</string>
+    <string name="ex_minsk">ex: Minsk</string>
+    <string name="go">Go</string>
+    <string name="logout">Logout</string>
+    <string name="error">Error!</string>
+    <string name="favorites">Favorites</string>
+    <string name="no_favorite_hotels">No favorite hotels</string>
+    <string name="from">from</string>
+    <string name="to">to</string>
+    <string name="what_s_around">What\'s Around</string>
+    <string name="book_now">Book Now</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="adults_num">Adults num</string>
+    <string name="children_num">Children num</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="check_in_date">Check-In Date</string>
+    <string name="check_out_date">Check-Out Date</string>
+    <string name="cash">Cash</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="card_number">Card Number</string>
+    <string name="expiry_date">Expiry Date</string>
+    <string name="cvv">CVV</string>
+    <string name="finish">finish</string>
+    <string name="cancel">CANCEL</string>
+    <string name="booking_history">Booking history</string>
+    <string name="refresh">refresh</string>
+</resources>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@color/white"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:id="@+id/layoutBookedHotelContainer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/textViewBookedHotelName"
+            tools:text = "Hotel Belarus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="cursive"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/textViewBookedCheckIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "2023/10/2023"
+            android:layout_marginStart="10dp"/>
+
+        <TextView
+            android:id="@+id/textViewBookedCheckOut"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text = "2023/10/2023"
+            android:layout_marginStart="10dp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCancelBooking"
+        android:text="@string/cancel"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

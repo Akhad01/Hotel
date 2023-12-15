@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "857901742635",
+    "project_id": "javahotelsapp",
+    "storage_bucket": "javahotelsapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:857901742635:android:0b9652f3edc0d15e1c086e",
+        "android_client_info": {
+          "package_name": "com.example.hotelbookingapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkayL95AkPi62OEIJRoA5IWLUrGXTj8yw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
